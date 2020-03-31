@@ -1,5 +1,8 @@
 package Model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
     private String SamsungUserName = "Dumitru";
     private String PixelUserName = "Stefan";
