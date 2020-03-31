@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("Model")
 public class ConfigClass {
 
-
+@Bean
+    public Samsung getSamsung(){
+    return new Samsung();
+}
 
 }
