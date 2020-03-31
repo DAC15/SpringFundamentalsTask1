@@ -1,6 +1,7 @@
 package Model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,9 +9,9 @@ public class Pixel implements Device {
 
     private String model;
     private int Ram;
-@Autowired
+    @Autowired
+    @Qualifier("Pixel")
     private User pixelUser;
-
     public String getModel() {
         return model;
     }
